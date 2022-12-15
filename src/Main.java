@@ -1,11 +1,7 @@
-import Dao.UserDao;
 import Model.GENDER;
 import Model.User;
 import Servic.MyExseption;
-import Servic.UserService;
 import impl.UserServiceImpl;
-
-import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
@@ -22,10 +18,10 @@ public class Main {
 
 
         try {
-            System.out.println(userService.FindByid(1));
-           userService.GetAllUsers();
-           userService.DeletUsers(1);
-           userService.GetAllUsers();
+            System.out.println(userService.findByid(1));
+           userService.getAllUsers();
+           userService.deletUsers(1);
+           userService.getAllUsers();
 
         } catch (MyExseption e){
             System.out.println(e.getMessage());

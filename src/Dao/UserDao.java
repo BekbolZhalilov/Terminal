@@ -7,22 +7,24 @@ import java.util.ArrayList;
 public class UserDao {
 
 
-    private ArrayList<User> userrs;
+    private ArrayList<User> users  = new ArrayList<>();
 
 
 
-    public ArrayList<User> getUserrs() {
-        return userrs;
+    public ArrayList<User> getUsers() {
+
+        return users;
     }
 
-    public void setUserrs(ArrayList<User> userrs) {
-        this.userrs = userrs;
+    public void setUsers(ArrayList<User> users) {
+
+        this.users = users;
     }
 
     @Override
     public String toString() {
         return "UserDao{" +
-                "userrs=" + userrs +
+                "users=" + users +
                 '}';
     }
 }
